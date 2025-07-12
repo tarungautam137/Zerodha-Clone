@@ -1,8 +1,12 @@
 import React from 'react'
+import HomePage from './landing page/home/HomePage'
+
 
 const App = () => {
   return (
-    <div className='w-1/2 h-screen bg-gray-600'>App</div>
+    <div>
+      <HomePage/>
+    </div>
   )
 }
 
