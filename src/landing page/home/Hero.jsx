@@ -1,8 +1,8 @@
 import React from 'react'
-
+import { FaFire } from "react-icons/fa";
 const Hero = () => {
   return (
-    <div>Hero</div>
+    <div>Hero <FaFire /></div>
   )
 }
 
