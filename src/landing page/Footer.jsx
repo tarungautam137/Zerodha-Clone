@@ -91,7 +91,7 @@ const Footer = () => {
 
       <p class='text-xs mb-5'>"Prevent unauthorised transactions in your account. Update your mobile numbers/email IDs with your stock brokers. Receive information of your transactions directly from Exchange on your mobile/email at the end of the day. Issued in the interest of investors. KYC is one time exercise while dealing in securities markets - once KYC is done through a SEBI registered intermediary (broker, DP, Mutual Fund etc.), you need not undergo the same process again when you approach another intermediary." Dear Investor, if you are subscribing to an IPO, there is no need to issue a cheque. Please write the Bank account number and sign the IPO application form to authorize your bank to make payment in case of allotment. In case of non allotment the funds will remain in your bank account. As a business we don't give stock tips, and have not authorized anyone to trade on behalf of others. If you find anyone claiming to be part of Zerodha and offering such services, please create a ticket here.</p>
 
-      <div className="pl-30 flex gap-5  text-sm pb-5">
+      <div className="pl-30 grid grid-cols-[repeat(9,auto)] gap-8 text-sm pb-5">
         <div>NSE</div>
         <div>BSE</div>
         <div>MCX</div>
@@ -106,7 +106,7 @@ const Footer = () => {
     </footer>
 
   );
-  
+
 };
 
 export default Footer;
