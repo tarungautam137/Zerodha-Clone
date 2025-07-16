@@ -11,8 +11,8 @@ import NavBar from '../NavBar'
 const HomePage = () => {
   return (
     <div>
-    <NavBar/>
-    <div className='px-50 flex flex-col items-center'>
+
+    <div className='px-50 pt-10 flex flex-col items-center'>
         
         <Hero/>
         <Stats/>
@@ -22,7 +22,7 @@ const HomePage = () => {
         <OpenAccount/>
         
     </div>
-      <Footer/>
+
     </div>
   )
 }
