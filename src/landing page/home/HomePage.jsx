@@ -11,15 +11,18 @@ import NavBar from '../NavBar'
 const HomePage = () => {
   return (
     <div>
-        <img src="images/coin.png" alt="" />
-        <NavBar/>
+    <NavBar/>
+    <div className='px-50 flex flex-col items-center'>
+        
         <Hero/>
         <Stats/>
         <Media/>
         <Pricing/>
         <Education/>
         <OpenAccount/>
-        <Footer/>
+        
+    </div>
+      <Footer/>
     </div>
   )
 }

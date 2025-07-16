@@ -4,7 +4,7 @@ import HomePage from './landing page/home/HomePage'
 
 const App = () => {
   return (
-    <div>
+    <div className=' bg-gray-300 min-h-screen'>
       <HomePage/>
     </div>
   )
