@@ -13,8 +13,10 @@ import Notfound from "./landing page/Notfound";
 const App = () => {
   return (
     <div className=" bg-gray-300 min-h-screen">
+
       <BrowserRouter>
         <Navbar />
+
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/signup" element={<SignupPage />} />
@@ -24,8 +26,11 @@ const App = () => {
           <Route path="/support" element={<SupportPage />} />
           <Route path="*" element={<Notfound/>}/>
         </Routes>
+
         <Footer />
+
       </BrowserRouter>
+      
     </div>
   );
 };
