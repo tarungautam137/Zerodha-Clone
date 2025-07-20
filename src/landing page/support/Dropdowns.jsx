@@ -23,7 +23,7 @@ const Dropdowns = () => {
     <div className="grid grid-cols-[2.5fr_1fr] gap-10 px-50 mt-10">
       <div className="grid text-lg">
         <div
-          className="flex items-center gap-2 border-1 pr-2 mt-5 hover:scale-102 hover:cursor-pointer transition-all duration-300 "
+          className="flex items-center gap-2 border-1 pr-2 mt-5 hover:scale-104 hover:cursor-pointer transition-all duration-300 "
           onClick={() => handleClick(0)}
         >
           <div className="p-4 bg-sky-200">
@@ -47,7 +47,7 @@ const Dropdowns = () => {
         </ul>
 
         <div
-          className="flex items-center gap-2 border-1 pr-2 mt-5 hover:scale-102 hover:cursor-pointer transition-all duration-300 "
+          className="flex items-center gap-2 border-1 pr-2 mt-5 hover:scale-104 hover:cursor-pointer transition-all duration-300 "
           onClick={() => handleClick(1)}
         >
           <div className="p-4 bg-sky-200">
@@ -71,7 +71,7 @@ const Dropdowns = () => {
         </ul>
 
         <div
-          className="flex items-center gap-2 border-1 pr-2 mt-5 hover:scale-102 hover:cursor-pointer transition-all duration-300 "
+          className="flex items-center gap-2 border-1 pr-2 mt-5 hover:scale-104 hover:cursor-pointer transition-all duration-300 "
           onClick={() => handleClick(2)}
         >
           <div className="p-4 bg-sky-200">
@@ -95,7 +95,7 @@ const Dropdowns = () => {
         </ul>
 
         <div
-          className="flex items-center gap-2 border-1 pr-2 mt-5 hover:scale-102 hover:cursor-pointer transition-all duration-300 "
+          className="flex items-center gap-2 border-1 pr-2 mt-5 hover:scale-104 hover:cursor-pointer transition-all duration-300 "
           onClick={() => handleClick(3)}
         >
           <div className="p-4 bg-sky-200">
@@ -117,7 +117,7 @@ const Dropdowns = () => {
         </ul>
 
         <div
-          className="flex items-center gap-2 border-1 pr-2 mt-5 hover:scale-102 hover:cursor-pointer transition-all duration-300 "
+          className="flex items-center gap-2 border-1 pr-2 mt-5 hover:scale-104 hover:cursor-pointer transition-all duration-300 "
           onClick={() => handleClick(4)}
         >
           <div className="p-4 bg-sky-200">
@@ -141,7 +141,7 @@ const Dropdowns = () => {
         </ul>
 
         <div
-          className="flex items-center gap-2 border-1 pr-2  mt-5 hover:scale-102 hover:cursor-pointer transition-all duration-300 "
+          className="flex items-center gap-2 border-1 pr-2  mt-5 hover:scale-104 hover:cursor-pointer transition-all duration-300 "
           onClick={() => handleClick(5)}
         >
           <div className="p-4 bg-sky-200">
