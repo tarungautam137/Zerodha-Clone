@@ -41,14 +41,18 @@ const Watchitem = ({ stock }) => {
       {show && (
         <div className="absolute top-1 right-0 z-100">
           {" "}
-          <Watchlistactions />{" "}
+          <Watchlistactions stockdata={stock} />{" "}
         </div>
       )}
+
     </li>
+
   );
+
 };
 
-const Watchlistactions = () => {
+const Watchlistactions = (stockdata) => {
+
   return (
     <div className="flex justify-end gap-4 items-center">
       <Tooltip title="Buy(B)" arrow>
@@ -72,6 +76,7 @@ const Watchlistactions = () => {
     </div>
   );
 };
+
 const Watchlist = () => {
   return (
     <div className="border-r-1 border-gray-400 h-screen pl-7 pt-10 pr-2 overflow-y-scroll">
