@@ -44,15 +44,11 @@ const Watchitem = ({ stock }) => {
           <Watchlistactions stockdata={stock} />{" "}
         </div>
       )}
-
     </li>
-
   );
-
 };
 
 const Watchlistactions = (stockdata) => {
-
   return (
     <div className="flex justify-end gap-4 items-center">
       <Tooltip title="Buy(B)" arrow>

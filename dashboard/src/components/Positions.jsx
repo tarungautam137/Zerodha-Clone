@@ -1,15 +1,22 @@
-import React, { useState } from "react";
-import { positions } from "../../public/data.js";
+import React, { useState ,useEffect} from "react";
 import { FaAngleUp } from "react-icons/fa";
 import { FaAngleDown } from "react-icons/fa";
+import axios from "axios"
 
 const Positions = () => {
   const [sortConfig, setSortConfig] = useState({ key: null, order: "asc" });
+  const [allPositions,setAllPositions]=useState([]);
 
-  const newarr = positions.map((obj, index) => {
+  useEffect(()=>{
+
+    axios.get("http://localhost:3002/allPositions").then((res)=>{setAllPositions(res.data)}).catch((err)=>{console.log(err)});
+
+  },[])
+
+  const newarr = allPositions.map((obj, index) => {
     return {
       product: obj.product,
-      Instrument: obj.name,
+      Instrument: obj.Name,
       QTY: obj.qty,
       "Avg. cost": obj.avg,
       LTP: obj.price,
@@ -44,7 +51,7 @@ const Positions = () => {
 
   return (
     <div className="ml-5 mt-10">
-      <h1 className="mb-10">Positions ({positions.length})</h1>
+      <h1 className="mb-10">Positions ({allPositions.length})</h1>
 
       <table className="text-xl">
         <tbody>

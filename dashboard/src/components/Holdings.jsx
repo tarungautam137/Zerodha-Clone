@@ -1,14 +1,21 @@
-import React, { useState } from "react";
-import { holdings } from "../../public/data.js";
+import React, { useState ,useEffect} from "react";
 import { FaAngleUp } from "react-icons/fa";
 import { FaAngleDown } from "react-icons/fa";
+import axios from "axios"
 
 const Holdings = () => {
   const [sortConfig, setSortConfig] = useState({ key: null, order: "asc" });
+  const [allHoldings,setAllHoldings]=useState([]);
 
-  const newarr = holdings.map((obj, index) => {
+  useEffect(()=>{
+
+    axios.get("http://localhost:3002/allHoldings").then((res)=>{setAllHoldings(res.data)}).catch((err)=>{console.log(err)});
+
+  },[])
+
+  const newarr = allHoldings.map((obj, index) => {
     return {
-      Instrument: obj.name,
+      Instrument: obj.Name,
       QTY: obj.qty,
       "Avg. cost": obj.avg,
       LTP: obj.price,
@@ -47,7 +54,7 @@ const Holdings = () => {
 
   return (
     <div className="ml-5 mt-10">
-      <h1 className="mb-10">Holdings ({holdings.length})</h1>
+      <h1 className="mb-10">Holdings ({allHoldings.length})</h1>
 
       <table className="text-xl">
         <tbody>
